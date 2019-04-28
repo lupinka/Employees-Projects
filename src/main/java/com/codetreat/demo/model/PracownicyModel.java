@@ -1,6 +1,6 @@
-package com.codetreat.demo.entity;
+package com.codetreat.demo.model;
 
-public class PracownikEntity {
+public class PracownicyModel {
     private Integer EmployeeID;
     private String EmployeeName;
     private Integer ProjectID;
