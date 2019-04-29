@@ -7,7 +7,17 @@
 <body>
 <div class="container">
     <div th:if="${not #lists.isEmpty(table)}">
-        <h2>EmployeeList</h2>
+        <h2>About Project</h2>
+        <th>Project ID:</th>
+        <td th:text="${project.ProjectID}"></td>
+        <th>Project Name:</th>
+        <td th:text="${project.ProjectName}"></td>
+        <th>start Date:</th>
+        <td th:text="${project.startDate}"></td>
+        <th>end Date:</th>
+        <td th:text="${project.endDate}"></td>
+
+        <h3>EmployeeList</h3>
         <table class="table table-striped">
             <tr>
                 <th>EmployeeID</th>

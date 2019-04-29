@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import com.codetreat.demo.model.ProjectModel;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.codetreat.demo.model.PracownicyModel;
-
 public class ProjectRowMapper implements RowMapper<ProjectModel> {
     @Override
     public ProjectModel mapRow(ResultSet rs, int rowNum) throws SQLException {
