@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+</head>
+<body>
+<div class="container">
+    <div th:if="${not #lists.isEmpty(table)}">
+        <h2>EmployeeList</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>EmployeeID</th>
+                <th>EmployeeName</th>
+            </tr>
+            <tr th:each="table : ${table}">
+                <td th:text="${table.EmployeeID}"></td>
+                <td th:text="${table.EmployeeName}"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
