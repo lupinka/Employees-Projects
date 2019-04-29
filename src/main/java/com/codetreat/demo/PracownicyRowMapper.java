@@ -12,6 +12,7 @@ public class PracownicyRowMapper implements RowMapper<PracownicyModel>{
     @Override
     public PracownicyModel mapRow(ResultSet rs, int rowNum) throws SQLException {
         PracownicyModel pracownik = new PracownicyModel();
+        pracownik.setID(rs.getInt("ID"));
         pracownik.setEmployeeID(rs.getInt("EmployeeID"));
         pracownik.setEmployeeName(rs.getString("EmployeeName"));
         pracownik.setProjectID(rs.getInt("ProjectID"));

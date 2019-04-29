@@ -4,6 +4,14 @@ public class PracownicyModel {
     private Integer EmployeeID;
     private String EmployeeName;
     private Integer ProjectID;
+    private Integer ID;
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
+    }
 
     public Integer getEmployeeID() {
         return EmployeeID;
