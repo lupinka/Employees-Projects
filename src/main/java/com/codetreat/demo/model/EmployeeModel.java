@@ -1,6 +1,6 @@
 package com.codetreat.demo.model;
 
-public class PracownicyModel {
+public class EmployeeModel {
     private Integer EmployeeID;
     private String EmployeeName;
 

@@ -3,17 +3,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.stereotype.Controller;
-import com.codetreat.demo.service.PracownicyService;
+import com.codetreat.demo.service.EPService;
 
 @Controller
-public class PController {
+public class EPController {
     @Autowired
-    PracownicyService Service;
+    EPService Service;
 
     @RequestMapping("/")
     String findAllEmployees(Model model) {
-        model.addAttribute("project", Service.findProjectById(2));
-        model.addAttribute("table",Service.findAllinProject(2));
+        int whichProject=1;
+        model.addAttribute("project", Service.findProjectById(whichProject));
+        model.addAttribute("table", Service.findAllinProject(whichProject));
         return "table";
     }
 }
